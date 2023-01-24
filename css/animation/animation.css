@@ -4,5 +4,5 @@
 
 .js-scroll.active{
     transform: translateX(0);
-    transition-duration: 1s;
+    transition-duration: 1.5s;
 }
