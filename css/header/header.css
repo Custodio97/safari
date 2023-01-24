@@ -1,0 +1,92 @@
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+   
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #2EB872;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 260px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+header nav ul.active{
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .8s;
+}
+header nav ul li a{
+    color: #000;
+    font-size: 1.115rem;
+
+}
+
+header .btn{
+    padding: .80rem 2rem;
+    background-color: #2EB872;
+    display: inline-block;
+    color: #fff;
+}
+
+header nav ul li a .btn:hover{
+    opacity: 0.7;
+    transition-duration: .8s;
+}
+
+.toggle{
+    color: #2EB872;
+    font-size: 2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+
+
+@media (min-width: 920px){
+  
+    header nav ul{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: row;
+     width: 100%;
+     height: 0;
+     top: 2.8rem;
+     right: -160px;
+     gap: 50px;
+     background-color: transparent;
+     opacity: 1;
+     transform: translateY(0);
+    
+    }
+
+    .toggle{
+        display: none;
+    }
+}

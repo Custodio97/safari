@@ -1,0 +1,8 @@
+.js-scroll{
+    transform: translateX(-100%);
+}
+
+.js-scroll.active{
+    transform: translateX(0);
+    transition-duration: 2s;
+}

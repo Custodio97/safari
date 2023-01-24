@@ -1,0 +1,59 @@
+#animals{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+#animals .animals-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+#animals .animals-text h1{
+    font-size: 2rem;
+}
+
+#animals .animals-text button{
+    padding: 1rem 3rem;
+    background-color:#2EB872;
+    color: white;
+
+}
+
+#animals .grid-image{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    
+}
+
+#animals .grid-image img{
+    width: 100%;
+    position:relative;
+}
+
+
+#animals .grid-image img:hover {
+    opacity: .8;
+    transition-duration: .8s;
+}
+
+@media (min-width: 920px) {
+    #animals .grid-image{
+        grid-template-columns:repeat(3, 1fr);
+    }
+
+    #animals .animals-text button{
+        padding: 2rem 5rem;
+        font-size: 2rem;
+    }
+        #animals .animals-text {
+            flex-direction: row;
+        }
+}

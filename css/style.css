@@ -1,0 +1,19 @@
+/*reset*/
+@import "reset/reset.css";
+
+/*header*/
+@import "header/header.css";
+
+/*main*/
+@import "main/home.css";
+@import "main/about.css";
+@import "main/bg-tiger.css";
+@import "main/services.css";
+@import "main/animals.css";
+@import "main/contact.css";
+
+/*footer*/
+@import "footer/footer.css";
+
+/*scroll*/
+@import "animation/animation.css";
